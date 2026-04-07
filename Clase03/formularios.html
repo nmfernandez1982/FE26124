@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+        body {
+            font-family: Arial;
+        }
+        form {
+            width: 400px;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+    </head>
+    <body>
+        <form action="ingresar.php" method="POST" enctype="multipart/form-data" >
+            
+            <label>Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escriba aqui su nombre" required maxlength="" minlength="" >
+            
+            <label>Email:</label>
+            <input type="email" name="email" id="email" placeholder="Escriba aqui su email" >
+            
+             <label>Contraseña:</label>
+             <input type="password" name="password" pattern="" id="password" placeholder="Escriba aqui su password" >
+        
+              <label>Edad:</label>
+             <input type="number" name="edad" id="edad" placeholder="Escriba aqui su edad" max="99" min="18" >
+        
+             <label>URL:</label>
+             <input type="url" name="web" id="web" placeholder="Escriba aqui su web" >
+
+
+             <label>Fecha:</label>
+             <input type="date" name="" id="">
+
+             
+             <label>Hora:</label>
+             <input type="time" name="" id="">
+
+             <label>Color:</label>
+             <input type="color" name="" id="">
+        
+            <label>Nivel de satisfaccion:</label>
+            <input type="range" min="0" max="10">
+
+            <br>
+
+            <label>
+                <input type="checkbox" > Acepto Terminos y condiciones
+            </label>
+
+
+            <label>turno:</label>
+            <input type="radio" value="mañana" > mañana
+            <input type="radio" value="tarde" > mañana
+
+
+            <label>Archivo:</label>
+            <input type="file">
+
+
+            <label>Pais:</label>
+            <select>
+                    <option value="ar">Argentina</option>
+                    <option value="pe">Peru</option>
+                    <option value="pa">Paraguay</option>
+            </select>
+
+
+            <label>Comentario:</label>
+            <textarea ></textarea>
+
+            <!-- Botones -->
+             <input type="submit" value="Enviar">
+             <input type="reset" value="Limpiar">
+            <button type="button" onclick="alert('boton comun')">Boton comun</button>
+
+            </form>
+    
+    </body>
+</html>
