@@ -22,8 +22,17 @@
         <form action="ingresar.php" method="POST" enctype="multipart/form-data" >
             
             <label>Nombre:</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Escriba aqui su nombre" required maxlength="" minlength="" >
+            <input type="text" name="nombre" size="30" id="nombre" placeholder="Escriba aqui su nombre" required maxlength="10" minlength="3" value="Nicolas" disabled >
             
+            <label>Usuario:</label>
+            <input 
+                type="text" 
+                name="usuario"
+                pattern="[A-Za-z0-9]{4,10}" 
+                title="Debe tener entre 4 y 10 caracteres, solo letras y números"
+                required
+            >
+
             <label>Email:</label>
             <input type="email" name="email" id="email" placeholder="Escriba aqui su email" >
             
@@ -53,7 +62,7 @@
             <br>
 
             <label>
-                <input type="checkbox" > Acepto Terminos y condiciones
+                <input type="checkbox" checked> Acepto Terminos y condiciones
             </label>
 
 
@@ -63,7 +72,7 @@
 
 
             <label>Archivo:</label>
-            <input type="file">
+            <input type="file" multiple>
 
 
             <label>Pais:</label>

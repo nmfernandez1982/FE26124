@@ -1,0 +1,37 @@
+/* *{
+    margin: 0;
+} */
+
+/* selectores de etiqueta*/
+/* body{
+    background-color: grey;
+}
+
+p{
+    color: red;
+} */
+
+
+/* selectores de id*/
+
+/* #fondoVerde{
+    color: green;
+    font-weight: bold;
+} */
+
+/* selectores de clase*/
+/* 
+.fondo{background-color: red;}
+
+.colorDeLetra{color: white;} */
+
+.SelectorClase{color: blue;}
+
+
+p{color:red !important;}
+
+#SelectorId{color: grey;}
+
+
+
+
