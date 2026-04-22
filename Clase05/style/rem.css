@@ -1,0 +1,15 @@
+html{
+    font-size: 20px; /*1rem = 16px elemento principal*/
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.texto{
+    font-size: 1.5rem;
+}
+
+.boton{
+    font-size: 1.2rem;
+}

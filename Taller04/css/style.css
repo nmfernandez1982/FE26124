@@ -1,0 +1,39 @@
+.alineado
+{
+text-align: center;
+}
+
+.decorado
+{
+text-decoration: underline;
+}
+
+.grande{
+font-size: 24px;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.color-nombre{
+    color:red;
+  
+}
+
+.color-hex{
+    color:#663073;
+    
+}
+
+/* .color-nombre,.color-hex,p,#prueba{
+  font-size: 8px;
+} */
+
+
+#cuadrado1{
+    height: 200px;
+    width: 200px;
+    background-color: #663073;
+}
+
