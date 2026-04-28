@@ -1,0 +1,40 @@
+
+
+
+/*selector de primer hijo*/
+li:first-child{
+  color: green;  
+}
+
+/*selector de ultimo hijo*/
+li:last-child{
+    color:red;
+}
+
+li:nth-child(2)
+{
+    color: blue;
+}
+
+input[type="password"]{
+    border: 2px solid blue;
+}
+
+
+/*hijo directo*/
+.contenedor > p{
+    color:blue;
+}
+
+/*selector de hermano*/
+h3 ~ p
+{
+    color:red;
+}
+
+
+
+input:hover{
+    background-color: aquamarine;
+}
+

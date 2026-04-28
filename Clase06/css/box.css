@@ -1,0 +1,27 @@
+*{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+
+.caja{
+    width: 300px;
+    height: 100px;
+    /* height: 300px; */
+    border: 10px solid black;
+    /* padding: 20px; */
+    padding-left: 295px;
+    background-color: orange;
+    color: wheat;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content-box{
+    box-sizing: content-box;
+}
+
+.border-box{
+    box-sizing: border-box;
+}
