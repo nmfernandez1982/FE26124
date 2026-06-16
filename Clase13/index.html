@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Tabla Dinamica</h1>
+
+        <button id="btnAgregar" >Agregar Fila</button>
+
+        <table id="tablaPersonas">
+                <thead>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+        </table>
+    
+
+    <script>
+        const btnAgregar=document.getElementById("btnAgregar");
+        const tbody=document.querySelector("#tablaPersonas tbody");
+        let contador=1;
+
+        btnAgregar.addEventListener("click",()=>{
+            const nuevaFila=document.createElement("tr");
+
+            nuevaFila.innerHTML=`
+                <td>${contador}</td>
+                <td>Persona  ${contador}</td>
+                <td>${18+contador} </td>
+            `;
+
+            tbody.appendChild(nuevaFila);
+
+            contador++
+        });
+
+    </script>
+
+    </body>
+</html>

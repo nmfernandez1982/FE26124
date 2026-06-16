@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Local Storage</h1>
+
+        <input id="inputNombre" type="text" maxlength="32" min="1" pattern="" >
+        <button id="btnGuardar">Agregar</button>
+        <button id="btnBorrar">Borrar</button>
+        <p id="resultado"></p>
+
+
+        <script>
+            const inputNombre=document.getElementById("inputNombre");
+            const btnGuardar=document.getElementById("btnGuardar");
+            const btnBorrar=document.getElementById("btnBorrar");
+            const resultado=document.getElementById("resultado");
+
+
+            const nombreGuardado=localStorage.getItem("nombre");
+
+            if(nombreGuardado)
+            {
+               resultado.textContent=`Nombre Guardado: ${nombreGuardado}`; 
+            }
+
+            btnGuardar.addEventListener("click",()=>{
+                localStorage.setItem("nombre",inputNombre.value);
+               resultado.textContent=`Nombre Guardado: ${inputNombre.value}`; 
+            });
+
+             btnBorrar.addEventListener("click",()=>{
+               localStorage.removeItem("nombre");
+               resultado.textContent="Dato Eliminado";
+               inputNombre.value="";
+            });
+          
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
